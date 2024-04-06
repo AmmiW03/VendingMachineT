@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             x:Class="VendingMachineT.Views.Machine"
+             Title="Máquinas">
+
+    <!-- Centro CAI, versión Beta
+        Universidad Politécnica de Tecámac
+        Desarrollador: Ammi Wang Almazán -->
+    
+    <ScrollView>
+        <Grid Padding="20,3,20,5">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="20*"/>
+                
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" BackgroundColor="Transparent">
+                <Label 
+                   Text="UBICACIÓN DE LAS MÁQUINAS" FontFamily="OpenSansRegular" 
+                   FontSize="15" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+            </Grid>
+
+            <maps:Map Grid.Row="1"
+                      IsShowingUser="True"/>
+
+            <Label Grid.Row="2" Text="Detalles de la máquina" 
+                       FontSize="15" FontAttributes="Bold" VerticalOptions="End"/>
+
+            <Label Grid.Row="3" Text="Ubicación: 19.665293, -98.866455" 
+                   FontSize="13" FontAttributes="None" VerticalOptions="Center"/>
+
+            <Label Grid.Row="4" Text="Contacto: Sr. Casa 2 - 5589852417" 
+                   FontSize="13" FontAttributes="None" VerticalOptions="Start"/>
+
+            <Button Grid.Row="4" Text="Ver máquina" TextColor="Black"
+                    BackgroundColor="#C8EDF5" HeightRequest="40" 
+                    WidthRequest="120" VerticalOptions="Center" 
+                    HorizontalOptions="End" Clicked="NewPage"/>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

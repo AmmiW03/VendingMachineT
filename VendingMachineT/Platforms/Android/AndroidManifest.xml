@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+	 <!--Centro CAI, versión Beta
+            Universidad Politécnica de Tecámac
+            Desarrollador: Ammi Wang Almazán -->
+	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true">
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value=""/>
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCES_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACECES_FINE_LOCATION"/>
+</manifest>
