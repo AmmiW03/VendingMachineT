@@ -52,24 +52,24 @@
                     <Grid Grid.Row="0" Grid.Column="5" BackgroundColor="#C8EDF5"/>
 
                     <Grid Grid.Row="1" Grid.Column="1">
-                        <Label Text="Fabuloso" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label Text="Fabuloso" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
                     </Grid>
                     <Grid Grid.Row="2" Grid.Column="1">
-                        <Label Text="50 Lt" HorizontalOptions="Center" VerticalOptions="Start"/>
+                        <Label Text="50 Lt" HorizontalOptions="Center" VerticalOptions="Start" TextColor="Black"/>
                     </Grid>
 
                     <Grid Grid.Row="1" Grid.Column="3">
-                        <Label Text="Clarasol" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label Text="Clarasol" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
                     </Grid>
                     <Grid Grid.Row="2" Grid.Column="3">
-                        <Label Text="50 Lt" HorizontalOptions="Center" VerticalOptions="Start"/>
+                        <Label Text="50 Lt" HorizontalOptions="Center" VerticalOptions="Start" TextColor="Black"/>
                     </Grid>
 
                     <Grid Grid.Row="1" Grid.Column="5">
-                        <Label Text="Suavitel" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label Text="Suavitel" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
                     </Grid>
                     <Grid Grid.Row="2" Grid.Column="5">
-                        <Label Text="50 Lt" HorizontalOptions="Center" VerticalOptions="Start"/>
+                        <Label Text="50 Lt" HorizontalOptions="Center" VerticalOptions="Start" TextColor="Black"/>
                     </Grid>
                 </Grid>
             </Grid>
