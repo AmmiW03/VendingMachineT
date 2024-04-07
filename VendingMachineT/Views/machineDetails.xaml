@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VendingMachineT.Views.machineDetails"
+             BackgroundColor="White"
              Title="Detalles de máquinas">
-             
 
     <!-- Centro CAI, versión Beta
       Universidad Politécnica de Tecámac
@@ -11,14 +11,15 @@
     
     <ScrollView>
         <Grid Padding="20,3,20,5">
-
+           
             <Grid.RowDefinitions>
                 <RowDefinition Height="10*"/>
-                <RowDefinition Height="50*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="13*"/>
                 <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="20*"/>
-
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0" BackgroundColor="Transparent">
@@ -27,7 +28,107 @@
                FontSize="15" TextColor="Black" VerticalOptions="CenterAndExpand"/>
             </Grid>
 
-            
+            <!--Gráficas-->
+            <Grid Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="10*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!--Espacio para gráficas-->
+                    <Grid Grid.Row="0" Grid.Column="1" BackgroundColor="#C8EDF5"/>
+                    <Grid Grid.Row="0" Grid.Column="3" BackgroundColor="#C8EDF5"/>
+                    <Grid Grid.Row="0" Grid.Column="5" BackgroundColor="#C8EDF5"/>
+
+                    <Grid Grid.Row="1" Grid.Column="1">
+                        <Label Text="Fabuloso" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="1">
+                        <Label Text="50 Lt" HorizontalOptions="Center" VerticalOptions="Start"/>
+                    </Grid>
+
+                    <Grid Grid.Row="1" Grid.Column="3">
+                        <Label Text="Clarasol" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="3">
+                        <Label Text="50 Lt" HorizontalOptions="Center" VerticalOptions="Start"/>
+                    </Grid>
+
+                    <Grid Grid.Row="1" Grid.Column="5">
+                        <Label Text="Suavitel" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="5">
+                        <Label Text="50 Lt" HorizontalOptions="Center" VerticalOptions="Start"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+            <!--Fechas-->
+
+            <Grid Grid.Row="3" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="40*"/>
+                    <RowDefinition Height="50*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*"/>
+                    <ColumnDefinition Width="70*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="Fecha inicial: " VerticalOptions="Center"/>
+                <Entry Grid.Row="1" Grid.Column="1"
+                       VerticalOptions="End"/>
+
+                <Label Grid.Row="2" Grid.Column="0"
+                       Text="Fecha final: " VerticalOptions="Center"/>
+                <Entry Grid.Row="2" Grid.Column="1"
+                       VerticalOptions="End"/>
+            </Grid>
+
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="40*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="1" Text="Consultar" TextColor="Black"
+                        BackgroundColor="#C8EDF5" HeightRequest="40" BorderWidth="0"
+                        WidthRequest="120"/>
+                <ImageButton Grid.Column="3" Source="descargar.png"
+                             HeightRequest="40" WidthRequest="40"/>
+            </Grid>
+
+            <Grid Grid.Row="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="80*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Text="Historial ventas" BackgroundColor="White" TextColor="Black"
+                        BorderColor="Black" BorderWidth="2" CornerRadius="1"/>
+                <Button Text="Historial rellenos" BackgroundColor="White" Grid.Column="1"
+                        TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="1"/>
+            </Grid>
 
         </Grid>
     </ScrollView>

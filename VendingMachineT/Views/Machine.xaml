@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
              x:Class="VendingMachineT.Views.Machine"
+             BackgroundColor="White"
              Title="Máquinas">
 
     <!-- Centro CAI, versión Beta
@@ -39,10 +40,24 @@
             <Label Grid.Row="4" Text="Contacto: Sr. Casa 2 - 5589852417" 
                    FontSize="13" FontAttributes="None" VerticalOptions="Start"/>
 
-            <Button Grid.Row="4" Text="Ver máquina" TextColor="Black"
-                    BackgroundColor="#C8EDF5" HeightRequest="40" 
-                    WidthRequest="120" VerticalOptions="Center" 
-                    HorizontalOptions="End" Clicked="NewPage"/>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="+" TextColor="Black"
+                        BackgroundColor="#C8EDF5" HeightRequest="40" 
+                        WidthRequest="40" VerticalOptions="Center" 
+                        HorizontalOptions="Center" Clicked="NewMachine" CornerRadius="20"/>
+
+                <Button Grid.Column="1" Text="Ver máquina" TextColor="Black"
+                        BackgroundColor="#C8EDF5" HeightRequest="40" 
+                        WidthRequest="120" VerticalOptions="Center" 
+                        HorizontalOptions="Start" Clicked="NewPage"/>
+            </Grid>
+
+               
 
         </Grid>
     </ScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="VendingMachineT.Views.newMachine"
+             BackgroundColor="White"
+            Title="Agregar máquinas">
+    <ScrollView>
+        <!-- Centro CAI, versión Beta
+              Universidad Politécnica de Tecámac
+              Desarrollador: Ammi Wang Almazán -->
+        
+        <Grid Padding="20,3,20,5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*" />
+                <RowDefinition Height="0.2*" />
+                <RowDefinition Height="50*" />
+                <RowDefinition Height="5*" />
+            </Grid.RowDefinitions>
+
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" 
+                    Text="AGREGAR MÁQUINAS" FontSize="17" TextColor="Black"
+                    HorizontalOptions="Start" VerticalOptions="Center"/>
+            </Grid>
+
+            <!-- Linea -->
+            <Grid Grid.Row="1" BackgroundColor="Black"/>
+            
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition  Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Row 0 -->
+                <Label Grid.Row="1" Grid.Column="0"
+                    Text="Nombre del contacto" FontSize="14" TextColor="Black"
+                    HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                <Entry Grid.Row="1" Grid.Column="1" 
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    IsReadOnly="False" WidthRequest="90"/>
+
+                <!-- Row 1 -->
+                <Label Grid.Row="2" Grid.Column="0" 
+                    Text="Teléfono de contacto" FontSize="14" TextColor="Black"
+                    HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                <Entry Grid.Row="2" Grid.Column="1" 
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    IsReadOnly="False"  WidthRequest="90"/>
+
+                <!-- Row 2 -->
+                <Label Grid.Row="3" Grid.Column="0"
+                        Text="Dirección" FontSize="14" TextColor="Black"
+                        HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                <Entry Grid.Row="3" Grid.Column="1" 
+                        HorizontalOptions="Center" VerticalOptions="Center"
+                        IsReadOnly="True" WidthRequest="125" Placeholder="(longitud y latitud)"/>
+
+                <!-- Row 3 -->
+                
+
+                <!-- Row 4 -->
+                
+
+                <!-- Row 5 -->
+                
+
+                <!-- Row 6 -->
+                <Button Grid.Row="5" Grid.Column="1" Text="Subir máquina" TextColor="Black"
+                        HorizontalOptions="CenterAndExpand" HeightRequest="50"
+                        BackgroundColor="#C8EDF5"/>
+
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>
